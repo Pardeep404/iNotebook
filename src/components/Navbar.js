@@ -25,9 +25,9 @@ export const Navbar = () => {
                         </li> */}
                     </ul>
                     {!localStorage.getItem('token')?<form className="d-flex" role="search">                        
-                        <Link className="btn btn-dark mx-1" to="/login" variant="contained" color="primary" role="button"><i class="fa fa-sign-in" aria-hidden="true"></i></Link>
-                        <Link className="btn btn-dark mx-1" to="signup" variant="contained" color="primary" role="button"><i class="fa fa-user-plus" aria-hidden="true"></i></Link>
-                    </form>: <button className="btn btn-dark" onClick={handleLogout}><i class="fa fa-sign-out" aria-hidden="true"></i></button> }
+                        <Link className="btn btn-dark mx-1" to="/login" variant="contained" color="primary" role="button"><i className="fa fa-sign-in" aria-hidden="true"></i></Link>
+                        <Link className="btn btn-dark mx-1" to="signup" variant="contained" color="primary" role="button"><i className="fa fa-user-plus" aria-hidden="true"></i></Link>
+                    </form>: <button className="btn btn-dark" onClick={handleLogout}><i className="fa fa-sign-out" aria-hidden="true"></i></button> }
                 </div>
             </div>
         </nav>
